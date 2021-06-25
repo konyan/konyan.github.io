@@ -1,0 +1,144 @@
+@import './css/reset.css';
+
+* {
+  font-family: 'Roboto Slab', serif;
+  background-color: #0d1d31;
+  color: white;
+  font-size: 300;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+section {
+  min-width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  z-index: 0;
+  -webkit-transition: all 0.75s cubic-bezier(0.75, 0.25, 0, 1.05);
+  transition: all 0.75s cubic-bezier(0.75, 0.25, 0, 1.05);
+}
+
+/* ///////////////////////////////////////// */
+/* ////////  INPUT CLICKER  /////////////// */
+/* //////////////////////////////////////// */
+
+#content1:checked ~ .container section {
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+#content2:checked ~ .container section {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+#content3:checked ~ .container section {
+  -webkit-transform: translateY(-200%);
+  transform: translateY(-200%);
+}
+
+#content4:checked ~ .container section {
+  -webkit-transform: translateY(-300%);
+  transform: translateY(-300%);
+}
+
+/* ///////////////////////////////////////// */
+/* //////  SCROLL CONTAINER  /////////////// */
+/* //////////////////////////////////////// */
+
+input {
+  display: none;
+}
+
+.scroll__container {
+  display: block;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 32px;
+}
+
+.scroll__container::after {
+  content: '';
+  margin-top: 12px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  display: block;
+  -webkit-transition: border-bottom 0.5s;
+  transition: border-bottom 0.5s; /* For modern browsers */
+}
+
+.scroll__container:hover::after {
+  border-bottom: 2px solid #6236ff;
+}
+
+.scroll__container:hover .scroll__container-label i {
+  color: #6236ff;
+}
+
+.scroll__container:hover .scroll__container-label small {
+  color: #6236ff;
+}
+
+.scroll__container-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 8px;
+}
+
+.scroll__container-label i {
+  margin-right: 16px;
+  font-size: 16px;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s; /* For modern browsers */
+}
+
+.scroll__container-label small {
+  color: aliceblue;
+  font-weight: 300;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s; /* For modern browsers */
+}
