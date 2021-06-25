@@ -5,7 +5,9 @@
   background-color: #0d1d31;
   color: white;
   font-size: 300;
+  font-size: 16px;
 }
+
 body {
   width: 100vw;
   height: 100vh;
@@ -23,7 +25,7 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 74%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -45,10 +47,6 @@ section {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -141,4 +139,37 @@ input {
   font-weight: 300;
   -webkit-transition: color 0.5s;
   transition: color 0.5s; /* For modern browsers */
+}
+
+/* ///////////////////////////////////////// */
+/* ////////  NAV CONTAINER  /////////////// */
+/* //////////////////////////////////////// */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 44px 0px;
+  flex-direction: row;
+}
+
+.navbar img {
+  width: 4rem;
+  height: auto;
+  border-radius: 2rem;
+  display: flex;
+}
+
+.navbar .contact {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar .contact img {
+  margin-right: 2rem;
+  width: 1.5rem;
+  height: auto;
+}
+
+.navbar .contact img:last-child {
+  margin-right: 0px;
 }
