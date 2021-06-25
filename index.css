@@ -1,6 +1,7 @@
 @import './css/reset.css';
 @import './css/stars.css';
 @import './css/slider.css';
+@import './css/opensource.css';
 
 * {
   font-family: 'Roboto Slab', serif;
@@ -161,7 +162,7 @@ input {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 44px 0px;
+  margin: 4rem 0px;
   flex-direction: row;
   align-items: center;
 }
@@ -196,7 +197,7 @@ input {
   width: 100%;
   display: block;
   position: relative;
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 .person .person__name {
@@ -224,6 +225,7 @@ input {
 
 .person .person__summary {
   line-height: 2.2rem;
+  width: 56%;
   display: block;
   font-size: 1.4rem;
   font-weight: 300;

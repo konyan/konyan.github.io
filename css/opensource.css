@@ -1,0 +1,55 @@
+.source {
+  display: block;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+.source li {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1.4rem;
+  padding: 0.6rem 0 2rem 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.source li:last-child {
+  border: none !important;
+}
+
+.source__info {
+  flex: 1;
+  margin-right: 1.4rem;
+}
+
+.source__info .source__info-title {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.source__info .source__info-description {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 28px;
+  margin-top: 0.8rem;
+}
+
+.source__tech {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 1rem;
+}
+
+.source__tech p {
+  background-color: #6236ff;
+  padding: 0.6rem 0.8rem;
+  margin-right: 0.6rem;
+  border-radius: 50px;
+  align-self: flex-start;
+}
+
+.source__git {
+  flex: 1;
+}
