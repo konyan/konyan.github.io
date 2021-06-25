@@ -150,6 +150,7 @@ input {
   justify-content: space-between;
   margin: 44px 0px;
   flex-direction: row;
+  align-items: center;
 }
 
 .navbar img {
@@ -164,12 +165,12 @@ input {
   flex-direction: row;
 }
 
-.navbar .contact img {
+.navbar .contact a img {
   margin-right: 2rem;
   width: 1.5rem;
   height: auto;
 }
 
-.navbar .contact img:last-child {
-  margin-right: 0px;
+.navbar .contact a:last-child {
+  margin-right: 0px !important;
 }
