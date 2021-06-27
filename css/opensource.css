@@ -39,7 +39,7 @@ li:nth-child(4) {
 li:nth-child(5) {
   -webkit-animation-delay: 1.25s;
   animation-delay: 1.25s;
-}
+ }
 
 .source li:last-child {
   border: none !important;
