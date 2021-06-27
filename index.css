@@ -247,4 +247,22 @@ input {
   section:nth-child(4) {
     overflow: auto;
   }
+
+  .content__title {
+    font-size: 2.4rem;
+  }
+
+  .container {
+    width: 84%;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .content__title {
+    font-size: 1.8rem;
+  }
+
+  .container {
+    width: 94%;
+  }
 }
