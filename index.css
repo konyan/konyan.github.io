@@ -119,11 +119,6 @@ input {
   margin-bottom: 2rem;
 }
 
-.scroll__container-2 {
-  position: relative;
-  margin-bottom: 3rem;
-}
-
 .scroll__container::after {
   content: '';
   margin-top: 12px;
@@ -222,6 +217,7 @@ input {
   font-weight: 500;
   font-size: 3.4rem;
   background-color: #6236ff;
+  opacity: 0.8;
   display: inline-block;
   padding: 0.8rem;
   border-radius: 2px;
@@ -237,7 +233,7 @@ input {
 
 .person .person__summary {
   line-height: 2.2rem;
-  width: 56%;
+  width: 60%;
   display: block;
   font-size: 1.4rem;
   font-weight: 300;
@@ -246,6 +242,11 @@ input {
 @media only screen and (max-width: 1140px) {
   section:nth-child(4) {
     overflow: auto;
+  }
+
+  .scroll__container-2 {
+    position: relative;
+    margin-bottom: 3rem;
   }
 
   .content__title {
@@ -258,11 +259,34 @@ input {
 }
 
 @media only screen and (max-width: 760px) {
+  .navbar {
+    margin: 3rem 0;
+  }
+
   .content__title {
     font-size: 1.8rem;
   }
 
   .container {
     width: 94%;
+  }
+
+  .person .person__name {
+    font-size: 3.6rem;
+  }
+
+  .person .person__position {
+    font-weight: 500;
+    font-size: 3rem;
+  }
+
+  .person .person_country {
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
+  }
+
+  .person .person__summary {
+    line-height: 2.2rem;
+    width: 100%;
   }
 }

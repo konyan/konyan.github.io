@@ -125,4 +125,8 @@ li:nth-child(5) {
     margin-top: 0.8rem;
     margin-bottom: 0.6rem;
   }
+
+  .source__tech p {
+    font-size: 0.8rem;
+  }
 }
